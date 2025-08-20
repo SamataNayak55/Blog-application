@@ -1,15 +1,31 @@
 import React from 'react'
-import {Route,Routes} from 'react-router-dom'
-
+import { Route,Router,Routes} from 'react-router-dom'
+import Blog from './pages/Blog'
+import Home from './pages/Home'
+import Layout from './pages/admin/layout'
+import Dashboard from './pages/admin/Dashboard'
+import AddBlog from './pages/admin/AddBlog'
+import Listblog from './pages/admin/Listblog'
+import Comments from './pages/admin/comments'
+import Login from './components/admin/login'
 
 const App = () => {
   return (
     <div>
-      <Routes>
-        <Route path='/' element={<Home/>} /> 
-      </Routes>
+      
+        <Routes>
+          <Route path='/' element={<Home/>} />  
+         <Route path='/blog/:id' element={<Blog/>} />
+        
+        <Route path='/admin' element={false ? <Layout/> : <Login/>}>
+        <Route index element={<Dashboard/>} />
+        <Route path='addBLog' element={<AddBlog/>} />
+        <Route path='listBlog' element={<Listblog/>} />
+        <Route path='comment' element={<Comments/>} />
+        </Route>
+       </Routes> 
     </div>
   )
 }
-
+2.19.03
 export default App

@@ -71,19 +71,21 @@ export const blog_data = [
         "updatedAt": "2025-04-24T08:26:29.750Z",
         "__v": 0,
         "isPublished": true,
-        "subTitle": "A Simple Step-by-Step Guide to Managing Your Lifestyle"
+        "subTitle": "A Simple Step-by-Step Guide to Managing Your Lifestyle",
+        "author" : "Samata Nayak"
     },
     {
         "_id": "6805ef08d8f584af5da78d39",
         "title": "How to create an effective startup roadmap or ideas",
-        "description": "<p>\tCreating an effective <strong>startup roadmap</strong> helps you turn an idea into a structured, actionable plan. It gives clarity on what to build, when to build it, and how to scale. Here's a short and practical guide to help you build your startup roadmap or refine your startup ideas:</p><h2>1. <strong>Start with the Problem, Not the Product</strong></h2><ol><li data-list=\"bullet\"><span class=\"ql-ui\" contenteditable=\"false\"></span>Identify a real, painful problem.</li><li data-list=\"bullet\"><span class=\"ql-ui\" contenteditable=\"false\"></span>Validate that it affects a significant audience.</li><li data-list=\"bullet\"><span class=\"ql-ui\" contenteditable=\"false\"></span>Ask: “Is this a must-have or just nice to have?”</li></ol><p><strong>Tip:</strong> Talk to real users, not just friends or family.</p><h2>2. <strong>Define Your Vision and Mission</strong></h2><ol><li data-list=\"bullet\"><span class=\"ql-ui\" contenteditable=\"false\"></span>Vision: Long-term impact you want to make.</li><li data-list=\"bullet\"><span class=\"ql-ui\" contenteditable=\"false\"></span>Mission: The approach or method to get there.</li></ol><p>This gives your roadmap a clear direction and purpose.</p><h2>3. <strong>Brainstorm and Filter Ideas</strong></h2><ol><li data-list=\"bullet\"><span class=\"ql-ui\" contenteditable=\"false\"></span>List all possible solutions to the problem.</li><li data-list=\"bullet\"><span class=\"ql-ui\" contenteditable=\"false\"></span>Evaluate each based on:</li><li data-list=\"bullet\" class=\"ql-indent-1\"><span class=\"ql-ui\" contenteditable=\"false\"></span>Feasibility</li><li data-list=\"bullet\" class=\"ql-indent-1\"><span class=\"ql-ui\" contenteditable=\"false\"></span>Market demand</li><li data-list=\"bullet\" class=\"ql-indent-1\"><span class=\"ql-ui\" contenteditable=\"false\"></span>Uniqueness</li><li data-list=\"bullet\" class=\"ql-indent-1\"><span class=\"ql-ui\" contenteditable=\"false\"></span>Revenue potential</li></ol><p>Shortlist 1-2 core ideas to pursue initially.</p><h2>4. <strong>Define Your MVP (Minimum Viable Product)</strong></h2><ol><li data-list=\"bullet\"><span class=\"ql-ui\" contenteditable=\"false\"></span>Strip your idea down to the core functionality.</li><li data-list=\"bullet\"><span class=\"ql-ui\" contenteditable=\"false\"></span>Build only what's needed to solve the problem simply.</li><li data-list=\"bullet\"><span class=\"ql-ui\" contenteditable=\"false\"></span>Focus on value, not features.</li></ol><p><strong>Example:</strong> If you're building a job portal, start with user registration and job posting only.</p><h2>5. <strong>Set Milestones (Roadmap Stages)</strong></h2><p>Break your journey into clear phases:</p><ol><li data-list=\"bullet\"><span class=\"ql-ui\" contenteditable=\"false\"></span><strong>Phase 1: Research &amp; Validation</strong></li><li data-list=\"bullet\" class=\"ql-indent-1\"><span class=\"ql-ui\" contenteditable=\"false\"></span>Market research</li><li data-list=\"bullet\" class=\"ql-indent-1\"><span class=\"ql-ui\" contenteditable=\"false\"></span>Competitor analysis</li><li data-list=\"bullet\" class=\"ql-indent-1\"><span class=\"ql-ui\" contenteditable=\"false\"></span>User interviews</li><li data-list=\"bullet\"><span class=\"ql-ui\" contenteditable=\"false\"></span><strong>Phase 2: MVP Development</strong></li><li data-list=\"bullet\" class=\"ql-indent-1\"><span class=\"ql-ui\" contenteditable=\"false\"></span>Build core product</li><li data-list=\"bullet\" class=\"ql-indent-1\"><span class=\"ql-ui\" contenteditable=\"false\"></span>Internal testing</li><li data-list=\"bullet\"><span class=\"ql-ui\" contenteditable=\"false\"></span><strong>Phase 3: Launch &amp; Feedback</strong></li><li data-list=\"bullet\" class=\"ql-indent-1\"><span class=\"ql-ui\" contenteditable=\"false\"></span>Soft launch to early users</li><li data-list=\"bullet\" class=\"ql-indent-1\"><span class=\"ql-ui\" contenteditable=\"false\"></span>Collect data, iterate</li><li data-list=\"bullet\"><span class=\"ql-ui\" contenteditable=\"false\"></span><strong>Phase 4: Growth &amp; Optimization</strong></li><li data-list=\"bullet\" class=\"ql-indent-1\"><span class=\"ql-ui\" contenteditable=\"false\"></span>Marketing</li><li data-list=\"bullet\" class=\"ql-indent-1\"><span class=\"ql-ui\" contenteditable=\"false\"></span>Add features based on feedback</li><li data-list=\"bullet\" class=\"ql-indent-1\"><span class=\"ql-ui\" contenteditable=\"false\"></span>Improve UI/UX</li><li data-list=\"bullet\"><span class=\"ql-ui\" contenteditable=\"false\"></span><strong>Phase 5: Scale</strong></li><li data-list=\"bullet\" class=\"ql-indent-1\"><span class=\"ql-ui\" contenteditable=\"false\"></span>Monetization</li><li data-list=\"bullet\" class=\"ql-indent-1\"><span class=\"ql-ui\" contenteditable=\"false\"></span>Partnerships</li><li data-list=\"bullet\" class=\"ql-indent-1\"><span class=\"ql-ui\" contenteditable=\"false\"></span>Hiring team</li></ol><h2>6. <strong>Use Tools for Planning and Tracking</strong></h2><ol><li data-list=\"bullet\"><span class=\"ql-ui\" contenteditable=\"false\"></span>Product roadmap tools: Trello, Notion, Jira, ClickUp</li><li data-list=\"bullet\"><span class=\"ql-ui\" contenteditable=\"false\"></span>Timeline tools: Gantt charts, Google Sheets, Miro</li><li data-list=\"bullet\"><span class=\"ql-ui\" contenteditable=\"false\"></span>Analytics: Mixpanel, Hotjar, GA4 for feedback loops</li></ol><h2>7. <strong>Keep It Flexible</strong></h2><p>A roadmap is a guide, not a rulebook. Be ready to pivot based on user feedback, market trends, or technical limitations.</p><h2>8. <strong>Revisit and Refine Regularly</strong></h2><p>Review your progress monthly or quarterly. Adjust priorities based on:</p><ol><li data-list=\"bullet\"><span class=\"ql-ui\" contenteditable=\"false\"></span>User data</li><li data-list=\"bullet\"><span class=\"ql-ui\" contenteditable=\"false\"></span>Business metrics</li><li data-list=\"bullet\"><span class=\"ql-ui\" contenteditable=\"false\"></span>New opportunities</li></ol><p><br></p>",
+        "description": "<p>\t Creating an effective <strong>startup roadmap</strong> helps you turn an idea into a structured, actionable plan. It gives clarity on what to build, when to build it, and how to scale. Here's a short and practical guide to help you build your startup roadmap or refine your startup ideas:</p><h2>1. <strong>Start with the Problem, Not the Product</strong></h2><ol><li data-list=\"bullet\"><span class=\"ql-ui\" contenteditable=\"false\"></span>Identify a real, painful problem.</li><li data-list=\"bullet\"><span class=\"ql-ui\" contenteditable=\"false\"></span>Validate that it affects a significant audience.</li><li data-list=\"bullet\"><span class=\"ql-ui\" contenteditable=\"false\"></span>Ask: “Is this a must-have or just nice to have?”</li></ol><p><strong>Tip:</strong> Talk to real users, not just friends or family.</p><h2>2. <strong>Define Your Vision and Mission</strong></h2><ol><li data-list=\"bullet\"><span class=\"ql-ui\" contenteditable=\"false\"></span>Vision: Long-term impact you want to make.</li><li data-list=\"bullet\"><span class=\"ql-ui\" contenteditable=\"false\"></span>Mission: The approach or method to get there.</li></ol><p>This gives your roadmap a clear direction and purpose.</p><h2>3. <strong>Brainstorm and Filter Ideas</strong></h2><ol><li data-list=\"bullet\"><span class=\"ql-ui\" contenteditable=\"false\"></span>List all possible solutions to the problem.</li><li data-list=\"bullet\"><span class=\"ql-ui\" contenteditable=\"false\"></span>Evaluate each based on:</li><li data-list=\"bullet\" class=\"ql-indent-1\"><span class=\"ql-ui\" contenteditable=\"false\"></span>Feasibility</li><li data-list=\"bullet\" class=\"ql-indent-1\"><span class=\"ql-ui\" contenteditable=\"false\"></span>Market demand</li><li data-list=\"bullet\" class=\"ql-indent-1\"><span class=\"ql-ui\" contenteditable=\"false\"></span>Uniqueness</li><li data-list=\"bullet\" class=\"ql-indent-1\"><span class=\"ql-ui\" contenteditable=\"false\"></span>Revenue potential</li></ol><p>Shortlist 1-2 core ideas to pursue initially.</p><h2>4. <strong>Define Your MVP (Minimum Viable Product)</strong></h2><ol><li data-list=\"bullet\"><span class=\"ql-ui\" contenteditable=\"false\"></span>Strip your idea down to the core functionality.</li><li data-list=\"bullet\"><span class=\"ql-ui\" contenteditable=\"false\"></span>Build only what's needed to solve the problem simply.</li><li data-list=\"bullet\"><span class=\"ql-ui\" contenteditable=\"false\"></span>Focus on value, not features.</li></ol><p><strong>Example:</strong> If you're building a job portal, start with user registration and job posting only.</p><h2>5. <strong>Set Milestones (Roadmap Stages)</strong></h2><p>Break your journey into clear phases:</p><ol><li data-list=\"bullet\"><span class=\"ql-ui\" contenteditable=\"false\"></span><strong>Phase 1: Research &amp; Validation</strong></li><li data-list=\"bullet\" class=\"ql-indent-1\"><span class=\"ql-ui\" contenteditable=\"false\"></span>Market research</li><li data-list=\"bullet\" class=\"ql-indent-1\"><span class=\"ql-ui\" contenteditable=\"false\"></span>Competitor analysis</li><li data-list=\"bullet\" class=\"ql-indent-1\"><span class=\"ql-ui\" contenteditable=\"false\"></span>User interviews</li><li data-list=\"bullet\"><span class=\"ql-ui\" contenteditable=\"false\"></span><strong>Phase 2: MVP Development</strong></li><li data-list=\"bullet\" class=\"ql-indent-1\"><span class=\"ql-ui\" contenteditable=\"false\"></span>Build core product</li><li data-list=\"bullet\" class=\"ql-indent-1\"><span class=\"ql-ui\" contenteditable=\"false\"></span>Internal testing</li><li data-list=\"bullet\"><span class=\"ql-ui\" contenteditable=\"false\"></span><strong>Phase 3: Launch &amp; Feedback</strong></li><li data-list=\"bullet\" class=\"ql-indent-1\"><span class=\"ql-ui\" contenteditable=\"false\"></span>Soft launch to early users</li><li data-list=\"bullet\" class=\"ql-indent-1\"><span class=\"ql-ui\" contenteditable=\"false\"></span>Collect data, iterate</li><li data-list=\"bullet\"><span class=\"ql-ui\" contenteditable=\"false\"></span><strong>Phase 4: Growth &amp; Optimization</strong></li><li data-list=\"bullet\" class=\"ql-indent-1\"><span class=\"ql-ui\" contenteditable=\"false\"></span>Marketing</li><li data-list=\"bullet\" class=\"ql-indent-1\"><span class=\"ql-ui\" contenteditable=\"false\"></span>Add features based on feedback</li><li data-list=\"bullet\" class=\"ql-indent-1\"><span class=\"ql-ui\" contenteditable=\"false\"></span>Improve UI/UX</li><li data-list=\"bullet\"><span class=\"ql-ui\" contenteditable=\"false\"></span><strong>Phase 5: Scale</strong></li><li data-list=\"bullet\" class=\"ql-indent-1\"><span class=\"ql-ui\" contenteditable=\"false\"></span>Monetization</li><li data-list=\"bullet\" class=\"ql-indent-1\"><span class=\"ql-ui\" contenteditable=\"false\"></span>Partnerships</li><li data-list=\"bullet\" class=\"ql-indent-1\"><span class=\"ql-ui\" contenteditable=\"false\"></span>Hiring team</li></ol><h2>6. <strong>Use Tools for Planning and Tracking</strong></h2><ol><li data-list=\"bullet\"><span class=\"ql-ui\" contenteditable=\"false\"></span>Product roadmap tools: Trello, Notion, Jira, ClickUp</li><li data-list=\"bullet\"><span class=\"ql-ui\" contenteditable=\"false\"></span>Timeline tools: Gantt charts, Google Sheets, Miro</li><li data-list=\"bullet\"><span class=\"ql-ui\" contenteditable=\"false\"></span>Analytics: Mixpanel, Hotjar, GA4 for feedback loops</li></ol><h2>7. <strong>Keep It Flexible</strong></h2><p>A roadmap is a guide, not a rulebook. Be ready to pivot based on user feedback, market trends, or technical limitations.</p><h2>8. <strong>Revisit and Refine Regularly</strong></h2><p>Review your progress monthly or quarterly. Adjust priorities based on:</p><ol><li data-list=\"bullet\"><span class=\"ql-ui\" contenteditable=\"false\"></span>User data</li><li data-list=\"bullet\"><span class=\"ql-ui\" contenteditable=\"false\"></span>Business metrics</li><li data-list=\"bullet\"><span class=\"ql-ui\" contenteditable=\"false\"></span>New opportunities</li></ol><p><br></p>",
         "category": "Startup",
         "image": blog_pic_2,
         "createdAt": "2025-04-21T07:08:56.214Z",
         "updatedAt": "2025-04-24T08:30:47.920Z",
         "__v": 0,
         "isPublished": true,
-        "subTitle": "Creating an effective <strong>startup roadmap"
+        "subTitle": "Creating an effective <strong>startup roadmap",
+        "author" : "Suma Nayak"
     },
     {
         "_id": "6805f2aad8f584af5da78d3b",
@@ -95,7 +97,8 @@ export const blog_data = [
         "updatedAt": "2025-04-24T08:20:36.187Z",
         "__v": 0,
         "isPublished": true,
-        "subTitle": "Learning New Tech to Boost Your Software Career"
+        "subTitle": "Learning New Tech to Boost Your Software Career",
+        "author" : "Vignesh Nayak"
     },
     {
         "_id": "6805f2e2d8f584af5da78d3d",
@@ -107,7 +110,8 @@ export const blog_data = [
         "updatedAt": "2025-04-24T08:20:36.979Z",
         "__v": 0,
         "isPublished": true,
-        "subTitle": "Tips for Getting the Most Out of Apps and Software"
+        "subTitle": "Tips for Getting the Most Out of Apps and Software",
+        "author" : "Ganapati Nayak"
     },
     {
         "_id": "6805f307d8f584af5da78d3f",
@@ -119,7 +123,8 @@ export const blog_data = [
         "updatedAt": "2025-04-24T08:32:42.649Z",
         "__v": 0,
         "isPublished": true,
-        "subTitle": "Enhancing Your Skills and Capturing Memorable Moments"
+        "subTitle": "Enhancing Your Skills and Capturing Memorable Moments",
+        "author" : "Harshita Nayak"
     },
     {
         "_id": "6805f324d8f584af5da78d41",
@@ -131,7 +136,8 @@ export const blog_data = [
         "updatedAt": "2025-04-24T09:32:08.179Z",
         "__v": 0,
         "isPublished": true,
-        "subTitle": "Maximizing Returns by Minimizing Resources in Your Startup"
+        "subTitle": "Maximizing Returns by Minimizing Resources in Your Startup",
+        "author" : "Bharati Keremane"
     },
     {
         "_id": "68062afc8474108ecb7d7944",
@@ -143,7 +149,8 @@ export const blog_data = [
         "updatedAt": "2025-04-24T09:31:52.102Z",
         "__v": 0,
         "isPublished": true,
-        "subTitle": "What Do They Mean for the Market?"
+        "subTitle": "What Do They Mean for the Market?",
+        "author" : "Honnnappa"
     },
     {
         "_id": "6809f9f23e075dbeedd23bca",
@@ -155,7 +162,8 @@ export const blog_data = [
         "createdAt": "2025-04-24T08:44:34.937Z",
         "updatedAt": "2025-04-24T09:59:21.299Z",
         "__v": 0,
-        "subTitle": "The New Way of Study: Ditching the Old"
+        "subTitle": "The New Way of Study: Ditching the Old",
+        "author" : "Mohan B Nayak"
     },
     {
         "_id": "6810995bb5fd81dd0c923d5b",
@@ -167,7 +175,8 @@ export const blog_data = [
         "createdAt": "2025-04-29T09:18:19.662Z",
         "updatedAt": "2025-04-29T10:13:25.035Z",
         "__v": 0,
-        "subTitle": " Why Tourism Matters More Than You Think"
+        "subTitle": " Why Tourism Matters More Than You Think",
+        "author" : "Surekha Nayak"
     },
     {
         "_id": "6810a6a2ed57ecc68a99abb3",
@@ -179,7 +188,8 @@ export const blog_data = [
         "createdAt": "2025-04-29T10:14:58.575Z",
         "updatedAt": "2025-04-29T10:14:58.575Z",
         "__v": 0,
-        "subTitle": "Navigating the Future Responsibly"
+        "subTitle": "Navigating the Future Responsibly",
+        "author" : "Gautam Naik"
     }
 ]
 
