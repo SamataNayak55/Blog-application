@@ -1,6 +1,15 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 const Login = () => {
+  
+  const [email, setEmail] = useState('')
+  const [password, setPassword] = useState('')
+
+  const handleSubmit = async(e) => {
+    e.preventDefault()
+  }
+
+
   return (
     <div>
       <div className='flex items-center justify-center h-screen'>
@@ -10,6 +19,17 @@ const Login = () => {
               <h1 className='text-3xl font-bold'>LOGIN</h1>
               <p className='font-light'>enter your credentials to access the adimin panel</p>
             </div>
+            <form onSubmit={handleSubmit} >
+              <div className='flex flex-col'>
+                <label>Email :</label>
+                <input onChange={e=> setEmail(e.target.value)} value={email} type="email" required placeholder='enter your email id' className='border-b-2 border-gray-300 p-2 outline-none mb-6' />
+              </div>
+              <div className='flex flex-col'>
+                <label>password :</label>
+                <input onChange={e => setPassword(e.target.value)} value={password} type="password" required placeholder='enter your password' className='border-b-2 border-gray-300 p-2 outline-none mb-6' />
+              </div>
+              <button type='submit' className='w-full py-3 font-medium bg-primary text-white rounded-2xl cursor-pointer hover:bg-primary/90 transition-all'> login </button>
+            </form>
           </div >
         </div>
       </div>
