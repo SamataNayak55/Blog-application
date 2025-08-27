@@ -11,8 +11,8 @@ const BlogCard = ({blog}) => {
       <img src={image} className='aspect-video' alt="" />
       <span className='ml-5 mt-4 px-3 py-1 inline-block bg-primary/20 rounded-full text-primary text-xs'>{category}</span>
       <div>
-        <h4 className='mb-2 font-medium text-gray-900'>{title}</h4>
-        <p className='mb-3 text-xs text-gray-600' dangerouslySetInnerHTML={{"__html": description.slice(0,80)}}></p>
+        <h4 className='mb-2 px-3 font-medium text-gray-900'>{title}</h4>
+        <p className='mb-3 px-5 text-xs text-gray-600' dangerouslySetInnerHTML={{"__html": description.slice(0,80)}}></p>
       </div>
     </div>
   )

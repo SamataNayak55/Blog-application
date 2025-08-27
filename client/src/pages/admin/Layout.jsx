@@ -1,8 +1,9 @@
 import React from 'react'
 import { assets } from '../../assets/assets'
-import { useNavigate } from 'react-router-dom'
+import { Outlet, useNavigate } from 'react-router-dom'
 import Sidebar from '../../components/admin/Sidebar'
 import Login from '../../components/admin/login'
+import Dashboard from './Dashboard'
 
 const Layout = () => {
   const navigate = useNavigate()
@@ -21,8 +22,12 @@ const Layout = () => {
       <div className='flex h-[calc(100vh-70px)]'>
         {/* sidebar */}
         <Sidebar />
-      </div>
+        <Outlet />
+      
       {/* outlet */}
+      
+        
+      </div>
     </>
   )
 }
