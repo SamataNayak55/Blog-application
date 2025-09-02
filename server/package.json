@@ -1,25 +1,29 @@
 {
   "name": "server",
   "version": "1.0.0",
-  "description": "",
-  "main": "server.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+  "description": "backend of blog application",
+  "homepage": "https://github.com/SamataNayak55/Blog-application#readme",
+  "bugs": {
+    "url": "https://github.com/SamataNayak55/Blog-application/issues"
   },
-  "keywords": [],
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SamataNayak55/Blog-application.git"
+  },
   "license": "ISC",
-  "type": "commonjs",
+  "author": "samata nayak",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "server": "nodemon index.js",
+    "start": "node index.js"
+  },
   "dependencies": {
     "cors": "^2.8.5",
     "dotenv": "^17.2.1",
     "express": "^5.1.0",
     "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.18.0",
-    "multer": "^2.0.2"
-  },
-  "devDependencies": {
     "nodemon": "^3.1.10"
   }
 }
