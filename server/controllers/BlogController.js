@@ -1,5 +1,5 @@
-
-
+import fs from 'fs';
+import imagekit from '../configs/imagekit.js';
 
 export const addBlog = async (req, res) => {
     try {
@@ -12,6 +12,31 @@ export const addBlog = async (req, res) => {
         if (!title || !description || !category || !imageFile) {
             return res.status(400).json({ success: false, message: "Title, description, category, and image are required." });
         }
+
+        const fileBuffer = fs.readFileSync(imageFile.path)
+
+        //upload image to imagekit
+        const responce = await imagekit.upload({
+            file: fileBuffer,
+            fileName: imageFile.originalname,
+            folder: '/blogs'
+        })
+
+        //optimization through imagekit url transformation
+        const optimizedImageUrl = imagekit.url({
+            path: responce.filePath,
+            transformation:[
+                {quality: 'auto'}, //auto compresssion
+                {format : 'webp'}, //convert to morden format
+                {width: '1280'} // width resizing
+            ]
+        });
+
+        const image = optimizedImageUrl;
+
+        await Blog.create({title,subTitle, description, category, image, isPublished})
+
+        res.json({success:true,message:"blog added successfully"})
 
         
     }catch (error) {
