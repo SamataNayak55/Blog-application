@@ -1,4 +1,6 @@
 import jwt from 'jsonwebtoken';
+import Blog from '../models/Blog.js';
+import Comment from '../models/comment.js';
 
 export const adminLogin = async(req, res) => {
     try{
@@ -13,5 +15,65 @@ export const adminLogin = async(req, res) => {
     
     }catch (error){
         res.json({sucess:false, message: error.message})
+        }
+    }
+
+export const getAllBlogAdmin = async (req, res) => {
+    try{
+        const blogs = await Blog.find({}).sort({createdAt: -1});
+        res.json({sucess: true,blogs})
+
+    } catch (error) {
+        res.json({sucess: false, message:error.message})
+    }
+} 
+
+
+export const getAllComments = async (req, res) => {
+    try{
+        const comments = await Comment.find({}).populate("blog").sort({createdAt: -1})
+        res.json({success: true, comments})
+    }catch(error) {
+        res.json({success: false,message: error.message})
+    }
+}
+
+
+export const getDashboard = async (req, res) => {
+    try{
+        const recentBlogs = await Blog.find({}).sort({createdAt: -1}).limit(5);
+        const blogs = await Blog.countDocuments();
+        const comments = await Comment.countDocuments();
+        const drafts = await Blog.countDocuments({isPublished:false})
+
+        const getDashboardData = {
+            blogs, comments, drafts, recentBlogs
+        }
+        res.json({success: true, getDashboardData})
+    } catch(error) {
+        res.json({success: false, message: error.message})
+    }
+}
+
+
+export const deleteCommentById = async(req, res) => {
+    try{
+        const {id} = req.body;
+        await Comment.findByIdAndDelete(id);
+
+        res.json({success:true, message: "comment deleted" })
+        } catch(error) {
+            res.json ({success: false, message:error.message})
+        }
+}
+
+
+export const approveCommentById = async(req, res) => {
+    try{
+        const {id} = req.body;
+        await Comment.findByIdAndUpdate(id, {isApproved: true});
+        res.json({success:true, message: "comment approved" })
+        } catch(error) {
+            res.json ({success: false, message:error.message})
         }
 }

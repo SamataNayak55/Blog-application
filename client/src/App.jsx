@@ -8,10 +8,17 @@ import AddBlog from './pages/admin/AddBlog'
 import Listblog from './pages/admin/Listblog'
 import Comments from './pages/admin/comments'
 import Login from './components/admin/login'
+import {Toaster} from "react-hot-toast"
+import { useAppContext } from './context/AppContext'
 
 const App = () => {
+  
+  const {token} = useAppContext()
+
+
   return (
     <div>
+      <Toaster />
       
         <Routes>
           <Route path='/' element={<Home/>} />  

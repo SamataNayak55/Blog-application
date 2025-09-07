@@ -1,7 +1,17 @@
 import React from 'react'
 import { assets } from '../assets/assets'
+import { useAppContext } from '../context/AppContext'
 
 const Header = () => {
+
+  const {setInput, input} = useAppContext();
+  const inputRef = useRef()
+
+  const onSubmitHandler = async (e) => {
+    e.preventDefault();
+    setInput(inputRef.current.value) 
+  }
+
   return (
     <div className='mx-8 sm:mx-16 xl:mx-24 relative'>
       <div className='text-center mt-20 mb-8'>
@@ -12,8 +22,10 @@ const Header = () => {
 
         <h1 className='text-3xl sm:text-6xl font-semibold sm:leading-16 text-gray-700'>BLOGING PLATFORM!!!</h1>
         <p className='my-6 sm:my-8 max-w-2xl m-auto max-sm:text-xs text-gray-500'> This is your space to think out loud, to share what matters, and to write without filters. Whether its one word or a thousand, your story starts right here.</p>
-        <form className='flex justify-between max-w-lg mac-sm:scale-75 mx-auto border border-gray-300 bg-white rounded overflow-hidden' >
-            <input type="text" placeholder='Search blogs' required  className='w-full pl-4 outline-none'/>
+        
+        
+        <form onSubmit={onSubmitHandler} className='flex justify-between max-w-lg mac-sm:scale-75 mx-auto border border-gray-300 bg-white rounded overflow-hidden' >
+            <input ref={inputRef} type="text" placeholder='Search blogs' required  className='w-full pl-4 outline-none'/>
             <button type='submit' className='bg-primary text-white px-8 py-2 m-1.5 rounded hover:scale-105 transition-all cursor-pointer'> Search </button>
         </form>
 

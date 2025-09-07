@@ -1,7 +1,11 @@
 import React, { useState } from 'react'
-import { assets } from '../../assets/assets'
+import { assets, blogCategories } from '../../assets/assets'
+import { useAppContext } from '../../context/AppContext';
 
 const AddBlog = () => {
+
+  const {axios} = useAppContext()
+  const [isAdding, setIsAdding] = useState(false)
 
   const [image, setImage] = useState(false);
   const[title, setTitle] = useState('');
@@ -34,10 +38,18 @@ const AddBlog = () => {
 
         <p className='mt-4'> Blog Discription</p>
         <div className='max-w-lg h-74 pb-16 sm:pb-10 pt-2 relative'>
-          <button type='button' onClick={generateContent} className='absolute bottom-1 right-2 ml-2 text-xs text-white bg-black/70 px-4 py-1.5 rounded hover:underline cursor-pointer'> Generate with AI</button>
+         <button  type='button' onClick={generateContent} className='absolute bottom-1 right-2 ml-2 text-xs text-white bg-black/70 px-4 py-1.5 rounded hover:underline cursor-pointer'> generate with ai </button>
+         
         </div>
+        <p className='mt-4'> Blog category</p>
+        <select onChange={e => setCatagory(e.target.value)} name="category" id="" className='mt-2 px-3 py-2 border text-gray-500 border-gray-300 outline-none rounded'>
+          <option value="">select category</option>
+          {blogCategories.map((item, index) ={
+            return(
 
-
+            <option key={index} value={item}> {item} </option>\)
+          })}
+        </select>
         </div>     
     </form>
   )
