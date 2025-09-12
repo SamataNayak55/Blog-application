@@ -21,8 +21,13 @@ app.get('/', (req, res) => {
 app.use('/api/admin',adminRouter)
 app.use('/api/blog', blogRouter)
 
+await connectDB().then(() => {
 app.listen(PORT, () => {
   console.log(`Example app listening at http://localhost:${PORT}`)
+})
+}).catch((error) => {
+  console.log("failed to connect db")
+
 })
 
 

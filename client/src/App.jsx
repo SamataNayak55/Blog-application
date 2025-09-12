@@ -1,5 +1,5 @@
 import React from 'react'
-import { Route,Router,Routes} from 'react-router-dom'
+import { Route,Routes} from 'react-router-dom'
 import Blog from './pages/Blog'
 import Home from './pages/Home'
 import Layout from './pages/admin/layout'
@@ -24,7 +24,7 @@ const App = () => {
           <Route path='/' element={<Home/>} />  
          <Route path='/blog/:id' element={<Blog/>} />
         
-        <Route path='/admin' element={true ? <Layout/> : <Login/>}>
+        <Route path='/admin' element={token ? <Layout/> : <Login/>}>
         <Route index element={<Dashboard/>} />
         <Route path='addBLog' element={<AddBlog/>} />
         <Route path='listBlog' element={<Listblog/>} />
