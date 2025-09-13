@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react'
-import Blog from '../Blog';
+//import Blog from '../Blog';
 import { blog_data } from '../../assets/assets';
 import BlogTable from '../../components/admin/BlogTable';
+//import Blog from '../Blog';
 
 const Listblog  = () => {
   const [blogs, setBlogs] = useState([]);
@@ -15,7 +16,7 @@ const Listblog  = () => {
   return (
     <div className='flex-1 pt-5 px-5 sm:pt-12 sm:pl-16 bg-blue-50/50'>
       <h1>All blogs</h1>
-      <div className='relative h-4/5 max-w-4xl overflow-x-auto shadow rounded-l scrollbar-hide bg-white'>
+      <div className='relative h-4/6 max-w-4xl overflow-x-auto shadow rounded-l scrollbar-hide bg-white'>
        <table className='w-full text-sm text-gray-500'>
         <thead className='text-xs text-gray-600 text-left uppercase'>
           <tr>

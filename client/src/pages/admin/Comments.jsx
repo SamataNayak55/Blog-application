@@ -8,7 +8,7 @@ const Comments = () => {
   const [filter, setFilter] = useState('not Approved')
 
   const fetchComments = async () => {
-    setComments(comments_data)
+    setComments(comments_date)
   }
 
   useEffect(()=> {

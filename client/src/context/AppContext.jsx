@@ -8,7 +8,7 @@ axios.defaults.baseURL = import.meta.env.VITE_API_BASE_URL;
 
 const AppContext = createContext();
 
-export const AppProvider = ({Children}) =>{
+export const AppProvider = ({children}) =>{
 
     const navigate = useNavigate()
 
@@ -41,7 +41,7 @@ export const AppProvider = ({Children}) =>{
     return(
 
     <AppContext.Provider value={value}>
-        {Children}
+        {children}
     </AppContext.Provider>
     )
 }

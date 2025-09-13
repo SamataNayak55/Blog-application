@@ -5,12 +5,12 @@ import { useAppContext } from '../../context/AppContext';
 const AddBlog = () => {
 
   const {axios} = useAppContext()
-  const [isAdding, setIsAdding] = useState(false)
-
-  const [image, setImage] = useState(false);
+ 
+  const [image, setImage] = useState(null);
   const[title, setTitle] = useState('');
   const[subTitle, setSubTitle] = useState('');
-  const[category, setCatagory] = useState('Startup');
+  const[category, setCategory] = useState('Startup');
+  const [description, setDescription] = useState('');
   const[published, setPublished] = useState(false);
 
   const generateContent = async()=>{
@@ -36,22 +36,26 @@ const AddBlog = () => {
         <p className='mt-4'> Blog Sub Title</p>
         <input type="text" placeholder='enter your blog  sub title' required className='w-full max-w-l mt-2 p-2 border border-gray-300 outline-none rounded ' onChange={e => setSubTitle (e.target.value)} value={subTitle} />
 
-        <p className='mt-4'> Blog Discription</p>
+        <p className='mt-4'> Blog Description</p>
         <div className='max-w-lg h-74 pb-16 sm:pb-10 pt-2 relative'>
          <button  type='button' onClick={generateContent} className='absolute bottom-1 right-2 ml-2 text-xs text-white bg-black/70 px-4 py-1.5 rounded hover:underline cursor-pointer'> generate with ai </button>
-         
+         <textarea
+  className="w-full max-w-lg mt-2 p-2 border border-gray-300 outline-none rounded"
+  placeholder="Enter blog description"
+  value={description}
+  onChange={e => setDescription(e.target.value)}
+  required
+/>
         </div>
         <p className='mt-4'> Blog category</p>
-        <select onChange={e => setCatagory(e.target.value)} name="category" id="" className='mt-2 px-3 py-2 border text-gray-500 border-gray-300 outline-none rounded'>
+        <select onChange={e => setCategory(e.target.value)} name={category} id="" className='mt-2 px-3 py-2 border text-gray-500 border-gray-300 outline-none rounded'>
           <option value="">select category</option>
-          {blogCategories.map((item, index) => {
-            return(
-
-            <option key={index} value={item}> {item} </option>
-                    )
-          })}
+          {blogCategories.map((item, index) => (
+            <option key={index} value={category}> {item} </option>
+          ))}
         </select>
-        </div>     
+        </div> 
+        <button type="submit" className="mt-4 px-4 py-2 bg-blue-600 text-white rounded">Submit</button>    
     </form>
   )
 }

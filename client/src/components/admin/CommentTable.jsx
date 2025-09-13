@@ -11,7 +11,7 @@ const CommentTable = ({comment, fetchComments}) => {
             <b className='font-medium text-gray-600'>Blog </b> : {blog.title}
             <br />
             <br />
-            <b className='font-medium text-gray-600'>Name</b> : {Comment.name}
+            <b className='font-medium text-gray-600'>Name</b> : {comment.name}
           <br />
             <b className='font-medium text-gray-600'>Comment</b> : {comment.content}
            </td>

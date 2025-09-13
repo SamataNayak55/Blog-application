@@ -6,8 +6,8 @@ const Dashboard = () => {
   const [dashboardData, setDashboardData] = useState({
     blogs: 0,
     comments: 0,
-    draft: 0,
-    resentBlogs: []
+    drafts: 0,
+    recentBlogs: []
   })
 
   const fetchDashboard = async () => {

@@ -24,8 +24,8 @@ const Blog = () => {
   const fetchBlogData = async ()=>{ 
 
     try{
-      const {data} = await axios.get('/api/blog.${id')
-      data.success ? setData(data.blog) : toast.error(data.message)
+      const {data} = await axios.get(`/api/blog/${id}`)
+            data.success ? setData(data.blog) : toast.error(data.message)
     } catch(error) {
       toast.error(error.message)
     }
@@ -41,14 +41,14 @@ const Blog = () => {
 
       }
     } catch (error){
-      toast.error(data.message);
+      toast.error(error.message);
     }
   }
 
   const addComment = async(e) => {
     e.preventDefault();
     try{
-      const {date} = await axios.post('/api/blog/add-comment', {blog: id, name, content});
+      const {data} = await axios.post('/api/blog/add-comment', {blog: id, name, content});
       if(data.success){
         toast.success(data.message)
         setName('')
@@ -64,7 +64,7 @@ const Blog = () => {
   useEffect(()=>{
     fetchBlogData()
     fetchComments()
-  },[])
+  },[id])
 
 
 
@@ -87,7 +87,7 @@ const Blog = () => {
           <p className='font-semibold mb-4'>Comments ({comments.length})</p>
           <div className='flex flex-col gap-4'>
             {comments.map((item, index)=>(
-              <div key={index} className='relative bg-primary/2 border border-primary/5 max-w-xl p-4crounded text-gray-600'>
+              <div key={index} className='relative bg-primary/2 border border-primary/5 max-w-xl p-4 rounded text-gray-600'>
                 <div className='display inline-flex gap-2 p-3 '>
                   <img src={assets.user_icon} className='w-6' alt="" />
                   <p className='font-medium'>{item.name}</p>

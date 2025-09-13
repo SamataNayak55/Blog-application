@@ -1,11 +1,11 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import { assets } from '../assets/assets'
 import { useAppContext } from '../context/AppContext'
 
 const Header = () => {
 
-  const {setInput, input} = useAppContext();
-  const inputRef = useRef()
+  const {input, setInput} = useAppContext();
+  const inputRef = useRef();
 
   const onSubmitHandler = async (e) => {
     e.preventDefault();
