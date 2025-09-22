@@ -46,7 +46,7 @@ export const AppProvider = ({children}) =>{
     )
 }
 
-export const useAppContext = () => {
+export const useAppContex = () => {
     return useContext(AppContext);
 };
 
@@ -58,9 +58,9 @@ import toast from "react-hot-toast";
 axios.defaults.baseURL = import.meta.env.VITE_API_BASE_URL;
 
 
-const AppContext = createContext();
+const AppContex = createContext();
 
-export const AppProvider = ({children}) =>{
+export const AppProvide = ({children}) =>{
 
     const navigate = useNavigate()
 
